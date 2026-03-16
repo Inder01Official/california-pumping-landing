@@ -14,24 +14,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "CPS | California Pumping & Sanitation - Septic Services",
+  description: "Southern California's trusted septic service provider for over 35 years. 24/7 emergency septic pumping, grease trap cleaning, and hydro-jetting services. Licensed, bonded, and insured.",
+  keywords: ["septic pumping", "grease trap cleaning", "hydro-jetting", "septic services", "California", "Los Angeles", "San Diego", "Orange County", "emergency septic", "septic tank"],
+  authors: [{ name: "California Pumping & Sanitation" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "CPS | California Pumping & Sanitation",
+    description: "Southern California's trusted septic service provider for over 35 years. 24/7 emergency service available.",
+    url: "https://californiapumping.com",
+    siteName: "California Pumping & Sanitation",
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "CPS | California Pumping & Sanitation",
+    description: "Southern California's trusted septic service provider for over 35 years.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -42,6 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="https://californiapumping.com/wp-content/uploads/2022/12/LogoGADS2.png" />
+        <link rel="apple-touch-icon" href="https://californiapumping.com/wp-content/uploads/2022/12/LogoGADS2.png" />
+        <meta name="theme-color" content="#1e40af" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
